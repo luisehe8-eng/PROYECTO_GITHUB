@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# Script para inicializar y subir el proyecto a GitHub
+# Script para inicializar y subir Visionarius a GitHub
 # ==============================================================================
 # Uso:
 #   chmod +x deploy-github.sh
@@ -13,9 +13,9 @@ REPO_URL="$1"
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$PROJECT_DIR"
 
-echo "⚡ ========================================================"
-echo "⚡       Subir NodePulse Landing a GitHub                 "
-echo "⚡ ========================================================"
+echo "🔵 ========================================================"
+echo "🔵       Subir Visionarius a GitHub                       "
+echo "🔵 ========================================================"
 
 # Si no tiene Git inicializado
 if [ ! -d ".git" ]; then
@@ -27,7 +27,7 @@ fi
 # Añadir archivos y crear commit
 echo "📝 Preparando commit..."
 git add .
-git commit -m "feat: landing page estilo n8n con editor de nodos interactivo y agentes IA" || echo "ℹ️  Sin cambios pendientes por commitear."
+git commit -m "feat: landing page Visionarius con branding azul, editor de nodos y agentes IA" || echo "ℹ️  Sin cambios pendientes por commitear."
 
 # Si se pasó la URL del repositorio remoto
 if [ -n "$REPO_URL" ]; then
@@ -36,7 +36,7 @@ if [ -n "$REPO_URL" ]; then
     git remote add origin "$REPO_URL"
     echo "🚀 Subiendo a GitHub (rama main)..."
     git push -u origin main
-    echo "✅ ¡Proyecto subido con éxito!"
+    echo "✅ ¡Visionarius subido con éxito!"
 else
     echo ""
     echo "ℹ️  Para subirlo a tu repositorio en GitHub ejecuta:"

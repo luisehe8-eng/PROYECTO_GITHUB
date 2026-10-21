@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# NodePulse - Script de Desarrollo Local y Servidor Web
+# Visionarius - Script de Desarrollo Local y Servidor Web
 # ==============================================================================
 # Uso:
 #   chmod +x start.sh
@@ -13,9 +13,9 @@ PORT=${1:-3000}
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$PROJECT_DIR"
 
-echo "⚡ ========================================================"
-echo "⚡       Lanzando NodePulse Landing (Estilo n8n)          "
-echo "⚡ ========================================================"
+echo "🔵 ========================================================"
+echo "🔵       Lanzando Visionarius Landing (Blue Branding)      "
+echo "🔵 ========================================================"
 echo "📁 Directorio: $PROJECT_DIR"
 echo "🌐 Puerto:     http://localhost:$PORT"
 echo "--------------------------------------------------------"

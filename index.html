@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NodePulse | Automatización de Flujos de Trabajo con IA & Open Source</title>
-  <meta name="description" content="Construye flujos de trabajo inteligentes sin límites. Alternativa de código abierto a n8n y Zapier con orquestación nativa de agentes IA, ejecución local y +500 integraciones.">
+  <title>Visionarius | Plataforma de Automatización de Flujos de Trabajo con IA & Open Source</title>
+  <meta name="description" content="Construye flujos de trabajo inteligentes sin límites con Visionarius. Alternativa de código abierto a n8n y Zapier con branding azul eléctrico, orquestación de agentes IA, ejecución local y +500 integraciones.">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff6d00' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><circle cx='18' cy='5' r='3'/><circle cx='6' cy='12' r='3'/><circle cx='18' cy='19' r='3'/><line x1='8.59' y1='13.51' x2='15.42' y2='17.49'/><line x1='15.41' y1='6.51' x2='8.59' y2='10.49'/></svg>">
+  <!-- Favicon Visionarius (Azul Eléctrico con Aperture / Vision Node) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><path d='m4.93 4.93 4.24 4.24'/><path d='m14.83 9.17 4.24-4.24'/><path d='m14.83 14.83 4.24 4.24'/><path d='m9.17 14.83-4.24 4.24'/><circle cx='12' cy='12' r='3'/></svg>">
 
   <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,35 +27,36 @@
           },
           colors: {
             brand: {
-              50: '#fff7ed',
-              100: '#ffedd5',
-              200: '#fed7aa',
-              300: '#fdba74',
-              400: '#fb923c',
-              500: '#ff6d00', // vibrant n8n-style orange
-              600: '#ea580c',
-              700: '#c2410c',
-              800: '#9a3412',
-              900: '#7c2d12',
-              accent: '#ff4d00',
-              purple: '#8b5cf6',
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#2563eb', // Azul Visionarius Royal/Eléctrico
+              600: '#1d4ed8',
+              700: '#1e40af',
+              800: '#1e3a8a',
+              900: '#172554',
+              accent: '#06b6d4', // Cyan Neón
+              glow: '#3b82f6',
               cyan: '#06b6d4',
+              indigo: '#6366f1',
               emerald: '#10b981'
             },
             surface: {
-              950: '#07090e',
-              900: '#0d111a',
-              850: '#111723',
-              800: '#171f30',
-              750: '#1d273c',
-              700: '#26334d',
-              border: '#1f2b42',
-              'border-subtle': 'rgba(255, 255, 255, 0.08)'
+              950: '#060913', // Fondo negro azulado profundo
+              900: '#0b1120',
+              850: '#0f172a',
+              800: '#1e293b',
+              750: '#27354f',
+              700: '#334155',
+              border: '#1e293b',
+              'border-subtle': 'rgba(59, 130, 246, 0.12)'
             }
           },
           backgroundImage: {
             'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-            'grid-pattern': "radial-gradient(rgba(255, 109, 0, 0.15) 1px, transparent 1px)",
+            'grid-pattern': "radial-gradient(rgba(37, 99, 235, 0.18) 1px, transparent 1px)",
           },
           keyframes: {
             pulseGlow: {
@@ -92,25 +93,25 @@
       height: 8px;
     }
     ::-webkit-scrollbar-track {
-      background: #07090e;
+      background: #060913;
     }
     ::-webkit-scrollbar-thumb {
-      background: #1f2b42;
+      background: #1e293b;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #ff6d00;
+      background: #2563eb;
     }
 
-    /* Glow Effects */
-    .glow-orange {
-      box-shadow: 0 0 50px -10px rgba(255, 109, 0, 0.35);
+    /* Glow Effects Visionarius Blue */
+    .glow-blue {
+      box-shadow: 0 0 50px -10px rgba(37, 99, 235, 0.45);
     }
-    .glow-orange-sm {
-      box-shadow: 0 0 20px -5px rgba(255, 109, 0, 0.4);
+    .glow-blue-sm {
+      box-shadow: 0 0 20px -5px rgba(37, 99, 235, 0.5);
     }
-    .glow-purple {
-      box-shadow: 0 0 50px -10px rgba(139, 92, 246, 0.35);
+    .glow-cyan {
+      box-shadow: 0 0 50px -10px rgba(6, 182, 212, 0.4);
     }
 
     /* Background Dot Grid */
@@ -118,18 +119,9 @@
       background-size: 28px 28px;
       background-image: radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
     }
-    .bg-dots-orange {
+    .bg-dots-blue {
       background-size: 28px 28px;
-      background-image: radial-gradient(circle, rgba(255, 109, 0, 0.12) 1px, transparent 1px);
-    }
-
-    /* Animated Gradient Borders */
-    .border-gradient {
-      border: 1px solid transparent;
-      background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02)) border-box;
-      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
+      background-image: radial-gradient(circle, rgba(37, 99, 235, 0.16) 1px, transparent 1px);
     }
 
     /* SVG Node Flow Animation */
@@ -147,11 +139,11 @@
 </head>
 <body class="bg-surface-950 text-slate-100 font-sans selection:bg-brand-500 selection:text-white antialiased overflow-x-hidden">
 
-  <!-- Ambient Light Gradients in Background -->
+  <!-- Ambient Light Gradients in Background (Visionarius Blue Aesthetic) -->
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[1000px] h-[550px] bg-gradient-radial from-brand-500/20 via-brand-600/5 to-transparent blur-3xl opacity-70"></div>
-    <div class="absolute top-[35%] -left-60 w-[600px] h-[600px] bg-gradient-radial from-brand-purple/15 via-transparent to-transparent blur-3xl"></div>
-    <div class="absolute top-[65%] -right-60 w-[600px] h-[600px] bg-gradient-radial from-brand-500/15 via-transparent to-transparent blur-3xl"></div>
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[1100px] h-[550px] bg-gradient-radial from-brand-600/25 via-brand-800/10 to-transparent blur-3xl opacity-80"></div>
+    <div class="absolute top-[35%] -left-60 w-[600px] h-[600px] bg-gradient-radial from-brand-accent/20 via-transparent to-transparent blur-3xl"></div>
+    <div class="absolute top-[65%] -right-60 w-[600px] h-[600px] bg-gradient-radial from-brand-500/20 via-transparent to-transparent blur-3xl"></div>
   </div>
 
   <!-- TOAST NOTIFICATION CONTAINER -->
@@ -161,21 +153,21 @@
   </div>
 
   <!-- ==================== NAVIGATION BAR ==================== -->
-  <header class="sticky top-0 z-40 w-full border-b border-surface-border-subtle bg-surface-950/80 backdrop-blur-xl transition-all duration-200">
+  <header class="sticky top-0 z-40 w-full border-b border-surface-border-subtle bg-surface-950/85 backdrop-blur-xl transition-all duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-18">
         
-        <!-- Logo -->
+        <!-- Logo Visionarius -->
         <a href="#" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform duration-300">
-            <i data-lucide="network" class="w-5 h-5"></i>
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 via-brand-600 to-cyan-500 flex items-center justify-center text-white shadow-lg shadow-brand-500/35 group-hover:scale-105 transition-transform duration-300">
+            <i data-lucide="aperture" class="w-5 h-5"></i>
           </div>
           <div class="flex flex-col">
             <div class="flex items-center gap-2">
-              <span class="text-xl font-bold tracking-tight text-white group-hover:text-brand-400 transition-colors">Node<span class="text-brand-500">Pulse</span></span>
-              <span class="text-[10px] font-mono font-semibold px-2 py-0.5 rounded-full bg-brand-500/15 text-brand-400 border border-brand-500/30">v2.4 OSS</span>
+              <span class="text-xl font-bold tracking-tight text-white group-hover:text-brand-300 transition-colors">Vision<span class="text-brand-400">arius</span></span>
+              <span class="text-[10px] font-mono font-semibold px-2 py-0.5 rounded-full bg-brand-500/15 text-brand-300 border border-brand-500/30">v3.0 OSS</span>
             </div>
-            <span class="text-[10px] text-slate-400 tracking-wider uppercase font-mono">Workflow Automation</span>
+            <span class="text-[10px] text-slate-400 tracking-wider uppercase font-mono">Intelligent Automation</span>
           </div>
         </a>
 
@@ -183,7 +175,7 @@
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
           <a href="#canvas-demo" class="hover:text-white transition-colors flex items-center gap-1.5">
             <span>Editor Visual</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-500 animate-ping"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-400 animate-ping"></span>
           </a>
           <a href="#ai-orchestration" class="hover:text-white transition-colors">Agentes IA</a>
           <a href="#templates" class="hover:text-white transition-colors">Flujos Prehechos</a>
@@ -198,7 +190,7 @@
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-850 hover:bg-surface-800 border border-surface-border text-xs font-mono text-slate-300 hover:text-white transition-all hover:border-slate-600">
             <i data-lucide="github" class="w-4 h-4"></i>
             <span>Star</span>
-            <span class="px-1.5 py-0.5 rounded bg-surface-750 text-slate-300 text-[11px] font-bold">18.4k</span>
+            <span class="px-1.5 py-0.5 rounded bg-surface-750 text-slate-300 text-[11px] font-bold">21.8k</span>
           </a>
 
           <!-- Iniciar Sesión -->
@@ -206,8 +198,8 @@
             Acceder
           </a>
 
-          <!-- Primary CTA Button -->
-          <a href="#start-free" onclick="celebrateSuccess(event)" class="relative group inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-brand-500 via-brand-600 to-brand-accent shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all">
+          <!-- Primary CTA Button (Visionarius Blue Gradient) -->
+          <a href="#start-free" onclick="celebrateSuccess(event)" class="relative group inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-brand-600 via-brand-500 to-cyan-500 shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all">
             <span>Probar Gratis</span>
             <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform"></i>
           </a>
@@ -230,7 +222,7 @@
       <a href="#pricing" class="block text-slate-300 hover:text-white font-medium py-1">Precios</a>
       <div class="pt-4 border-t border-surface-border flex flex-col gap-3">
         <a href="#login" class="w-full text-center py-2.5 rounded-lg bg-surface-800 text-slate-200 font-medium">Acceder</a>
-        <a href="#start-free" class="w-full text-center py-2.5 rounded-lg bg-brand-500 hover:bg-brand-600 text-white font-semibold shadow-lg shadow-brand-500/30">Empezar Gratis</a>
+        <a href="#start-free" class="w-full text-center py-2.5 rounded-lg bg-brand-600 hover:bg-brand-500 text-white font-semibold shadow-lg shadow-brand-500/30">Empezar Gratis</a>
       </div>
     </div>
   </header>
@@ -242,13 +234,13 @@
       
       <!-- Announcement Pill -->
       <div class="flex justify-center mb-8">
-        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-850/90 border border-brand-500/30 backdrop-blur-md shadow-inner text-xs font-medium text-slate-300 hover:border-brand-500/60 transition-all cursor-pointer group">
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-850/90 border border-brand-500/35 backdrop-blur-md shadow-inner text-xs font-medium text-slate-300 hover:border-brand-400 transition-all cursor-pointer group">
           <span class="flex h-2 w-2 relative">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
           </span>
-          <span class="text-brand-300 font-semibold font-mono">NUEVO:</span>
-          <span>Nodos de Agentes Autónomos con soporte para Claude 3.5, GPT-4o y DeepSeek</span>
+          <span class="text-brand-300 font-semibold font-mono">VISIONARIUS v3.0:</span>
+          <span>Orquestación de Agentes con Claude 3.5, GPT-4o y DeepSeek-V3</span>
           <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-400 group-hover:translate-x-1 transition-transform"></i>
         </div>
       </div>
@@ -256,17 +248,17 @@
       <!-- Hero Heading -->
       <div class="text-center max-w-4xl mx-auto space-y-6">
         <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.12]">
-          Automatiza cualquier cosa.<br>
-          <span class="bg-gradient-to-r from-brand-400 via-brand-500 to-amber-300 bg-clip-text text-transparent">Sin límites ni peajes de código.</span>
+          Automatiza cualquier proceso.<br>
+          <span class="bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-300 bg-clip-text text-transparent">Con el poder de Visionarius.</span>
         </h1>
         
         <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal">
-          La alternativa de código abierto y visual para orquestar <strong class="text-white font-medium">agentes de IA</strong>, conectar tus APIs y ejecutar código nativo. Autoalójalo en tu servidor o úsalo en la nube.
+          La plataforma visual de código abierto para orquestar <strong class="text-white font-medium">agentes autónomos de IA</strong>, conectar tus APIs y ejecutar código nativo. Autoalójalo en tu servidor o disfrútalo en la nube.
         </p>
 
         <!-- CTA Action Group -->
         <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#canvas-demo" class="w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold text-base text-white bg-gradient-to-r from-brand-500 via-brand-600 to-brand-accent shadow-xl shadow-brand-500/30 hover:shadow-brand-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+          <a href="#canvas-demo" class="w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold text-base text-white bg-gradient-to-r from-brand-600 via-brand-500 to-cyan-500 shadow-xl shadow-brand-500/35 hover:shadow-brand-500/60 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2">
             <i data-lucide="play" class="w-4 h-4 fill-white"></i>
             <span>Ver Flujo en Acción</span>
           </a>
@@ -274,8 +266,8 @@
           <!-- Quick Docker Run Copier -->
           <div class="w-full sm:w-auto flex items-center bg-surface-900 border border-surface-border rounded-xl px-4 py-2 text-xs font-mono text-slate-300 shadow-lg group hover:border-brand-500/50 transition-colors">
             <span class="text-brand-400 font-bold select-none mr-2">$</span>
-            <code class="text-slate-200 select-all overflow-x-auto whitespace-nowrap">docker run -p 5678:5678 nodepulse/nodepulse</code>
-            <button onclick="copyToClipboard('docker run -it --rm --name nodepulse -p 5678:5678 -v ~/.nodepulse:/data nodepulse/nodepulse', 'Comando Docker copiado')" class="ml-3 p-1.5 rounded-md hover:bg-surface-800 text-slate-400 hover:text-white transition-colors" title="Copiar comando">
+            <code class="text-slate-200 select-all overflow-x-auto whitespace-nowrap">docker run -p 5678:5678 visionarius/visionarius</code>
+            <button onclick="copyToClipboard('docker run -it --rm --name visionarius -p 5678:5678 -v ~/.visionarius:/data visionarius/visionarius', 'Comando Docker de Visionarius copiado')" class="ml-3 p-1.5 rounded-md hover:bg-surface-800 text-slate-400 hover:text-white transition-colors" title="Copiar comando">
               <i data-lucide="copy" class="w-4 h-4"></i>
             </button>
           </div>
@@ -284,19 +276,19 @@
         <!-- Trust Badges -->
         <div class="pt-6 flex flex-wrap items-center justify-center gap-y-2 gap-x-8 text-xs font-medium text-slate-400">
           <div class="flex items-center gap-2">
-            <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+            <i data-lucide="check" class="w-4 h-4 text-brand-400"></i>
             <span>100% Código Abierto (Fair-code)</span>
           </div>
           <div class="flex items-center gap-2">
-            <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+            <i data-lucide="check" class="w-4 h-4 text-brand-400"></i>
             <span>Sin límites de ejecuciones en local</span>
           </div>
           <div class="flex items-center gap-2">
-            <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
-            <span>Soporte nativo para JavaScript / Python</span>
+            <i data-lucide="check" class="w-4 h-4 text-brand-400"></i>
+            <span>JavaScript & Python nativo</span>
           </div>
           <div class="flex items-center gap-2">
-            <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+            <i data-lucide="check" class="w-4 h-4 text-brand-400"></i>
             <span>Zero Data Egress (Privacidad Total)</span>
           </div>
         </div>
@@ -306,7 +298,7 @@
   </section>
 
 
-  <!-- ==================== INTERACTIVE CANVAS DEMO (THE HEART OF THE LANDING) ==================== -->
+  <!-- ==================== INTERACTIVE CANVAS DEMO (VISIONARIUS BLUE) ==================== -->
   <section id="canvas-demo" class="relative py-12 md:py-20 bg-surface-900 border-y border-surface-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -315,19 +307,19 @@
         <div>
           <div class="inline-flex items-center gap-2 text-brand-400 font-mono text-xs uppercase tracking-wider mb-2 font-semibold">
             <i data-lucide="cpu" class="w-4 h-4"></i>
-            <span>Canvas Visual en Vivo</span>
+            <span>Lienzo Visual Visionarius</span>
           </div>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Diseña lógica compleja en minutos, no semanas
           </h2>
           <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
-            Haz clic en <strong class="text-brand-400 font-semibold">"▶ Ejecutar Flujo"</strong> para ver cómo viajan los datos en tiempo real entre el Webhook, el Agente de IA, el Router y las bases de datos.
+            Haz clic en <strong class="text-brand-400 font-semibold">"▶ Ejecutar Flujo"</strong> para ver cómo viajan los pulsos de datos en tiempo real entre el Webhook, el Agente IA, el Router y tus bases de datos.
           </p>
         </div>
 
         <!-- Canvas Controls -->
         <div class="flex items-center gap-3">
-          <button id="run-flow-btn" onclick="triggerWorkflowExecution()" class="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 shadow-lg shadow-emerald-500/25 active:scale-95 transition-all flex items-center gap-2">
+          <button id="run-flow-btn" onclick="triggerWorkflowExecution()" class="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-brand-600 via-brand-500 to-cyan-500 hover:from-brand-500 hover:to-cyan-400 shadow-lg shadow-brand-500/35 active:scale-95 transition-all flex items-center gap-2">
             <i data-lucide="play" class="w-4 h-4 fill-white" id="run-icon"></i>
             <span id="run-text">Ejecutar Flujo</span>
           </button>
@@ -339,7 +331,7 @@
       </div>
 
       <!-- WORKFLOW BUILDER SIMULATOR CONTAINER -->
-      <div class="relative rounded-2xl border border-surface-border bg-surface-950 shadow-2xl overflow-hidden glow-orange">
+      <div class="relative rounded-2xl border border-surface-border bg-surface-950 shadow-2xl overflow-hidden glow-blue">
         
         <!-- Editor Topbar -->
         <div class="flex items-center justify-between px-5 py-3.5 bg-surface-900 border-b border-surface-border text-xs text-slate-400">
@@ -347,12 +339,12 @@
             <div class="flex items-center gap-1.5">
               <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
               <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
-              <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+              <span class="w-3 h-3 rounded-full bg-brand-400/80"></span>
             </div>
             <span class="text-slate-600">|</span>
             <div class="flex items-center gap-2">
-              <span class="font-mono text-slate-200 font-medium">Flujo: "Calificación y Enriquecimiento de Leads con IA"</span>
-              <span class="px-2 py-0.5 rounded text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-semibold uppercase">Activo</span>
+              <span class="font-mono text-slate-200 font-medium">Visionarius Canvas: "Calificación y Enriquecimiento de Leads con IA"</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-brand-500/20 text-brand-300 border border-brand-500/30 font-semibold uppercase">Activo</span>
             </div>
           </div>
 
@@ -367,21 +359,21 @@
         </div>
 
         <!-- Interactive Canvas Area -->
-        <div class="relative w-full h-[520px] bg-dots-orange overflow-x-auto overflow-y-hidden select-none">
+        <div class="relative w-full h-[520px] bg-dots-blue overflow-x-auto overflow-y-hidden select-none">
           
           <!-- SVG Connecting Curves Layer -->
           <svg class="absolute inset-0 w-[1100px] h-[520px] pointer-events-none z-0" id="flow-svg">
             <defs>
-              <!-- Glowing Gradient for flow lines -->
-              <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#ff6d00" stop-opacity="0.8" />
-                <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.9" />
-                <stop offset="100%" stop-color="#10b981" stop-opacity="0.8" />
+              <!-- Glowing Gradient for flow lines (Visionarius Electric Blue / Cyan) -->
+              <linearGradient id="blueLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#2563eb" stop-opacity="0.9" />
+                <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.95" />
+                <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.9" />
               </linearGradient>
               
-              <linearGradient id="lineGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.8" />
-                <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.8" />
+              <linearGradient id="blueLineGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.9" />
+                <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.9" />
               </linearGradient>
 
               <!-- Filter for glow -->
@@ -391,33 +383,33 @@
               </filter>
             </defs>
 
-            <!-- Line 1: Webhook (x:200, y:230) -> AI Agent (x:380, y:230) -->
-            <path id="path1" d="M 230 230 C 300 230, 310 230, 380 230" fill="none" stroke="#26334d" stroke-width="3" stroke-linecap="round" />
-            <path id="path1-active" d="M 230 230 C 300 230, 310 230, 380 230" fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6,6" class="opacity-0 transition-opacity duration-300" />
+            <!-- Line 1: Webhook (x:230, y:230) -> AI Agent (x:380, y:230) -->
+            <path id="path1" d="M 230 230 C 300 230, 310 230, 380 230" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" />
+            <path id="path1-active" d="M 230 230 C 300 230, 310 230, 380 230" fill="none" stroke="url(#blueLineGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6,6" class="opacity-0 transition-opacity duration-300" />
 
             <!-- Line 2: AI Agent (x:560, y:230) -> Decision Router (x:650, y:230) -->
-            <path id="path2" d="M 560 230 C 600 230, 610 230, 650 230" fill="none" stroke="#26334d" stroke-width="3" stroke-linecap="round" />
-            <path id="path2-active" d="M 560 230 C 600 230, 610 230, 650 230" fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6,6" class="opacity-0 transition-opacity duration-300" />
+            <path id="path2" d="M 560 230 C 600 230, 610 230, 650 230" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" />
+            <path id="path2-active" d="M 560 230 C 600 230, 610 230, 650 230" fill="none" stroke="url(#blueLineGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6,6" class="opacity-0 transition-opacity duration-300" />
 
             <!-- Line 3A: Router (x:780, y:210) -> High Value Lead -> Slack / HubSpot (x:880, y:130) -->
-            <path id="path3" d="M 780 210 C 820 210, 830 130, 880 130" fill="none" stroke="#26334d" stroke-width="3" stroke-linecap="round" />
-            <path id="path3-active" d="M 780 210 C 820 210, 830 130, 880 130" fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6,6" class="opacity-0 transition-opacity duration-300" />
+            <path id="path3" d="M 780 210 C 820 210, 830 130, 880 130" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" />
+            <path id="path3-active" d="M 780 210 C 820 210, 830 130, 880 130" fill="none" stroke="url(#blueLineGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6,6" class="opacity-0 transition-opacity duration-300" />
 
             <!-- Line 3B: Router (x:780, y:250) -> Standard Lead -> PostgreSQL / Nurture (x:880, y:330) -->
-            <path id="path4" d="M 780 250 C 820 250, 830 330, 880 330" fill="none" stroke="#26334d" stroke-width="3" stroke-linecap="round" />
-            <path id="path4-active" d="M 780 250 C 820 250, 830 330, 880 330" fill="none" stroke="url(#lineGrad2)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6,6" class="opacity-0 transition-opacity duration-300" />
+            <path id="path4" d="M 780 250 C 820 250, 830 330, 880 330" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" />
+            <path id="path4-active" d="M 780 250 C 820 250, 830 330, 880 330" fill="none" stroke="url(#blueLineGrad2)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6,6" class="opacity-0 transition-opacity duration-300" />
 
             <!-- Animated Data Pulse Balls -->
-            <circle id="pulse-ball-1" r="5" fill="#ff6d00" filter="url(#glowEffect)" class="hidden">
+            <circle id="pulse-ball-1" r="5" fill="#38bdf8" filter="url(#glowEffect)" class="hidden">
               <animateMotion dur="0.8s" repeatCount="1" fill="freeze" path="M 230 230 C 300 230, 310 230, 380 230" />
             </circle>
-            <circle id="pulse-ball-2" r="5" fill="#8b5cf6" filter="url(#glowEffect)" class="hidden">
+            <circle id="pulse-ball-2" r="5" fill="#06b6d4" filter="url(#glowEffect)" class="hidden">
               <animateMotion dur="0.8s" repeatCount="1" fill="freeze" path="M 560 230 C 600 230, 610 230, 650 230" />
             </circle>
-            <circle id="pulse-ball-3" r="5" fill="#10b981" filter="url(#glowEffect)" class="hidden">
+            <circle id="pulse-ball-3" r="5" fill="#60a5fa" filter="url(#glowEffect)" class="hidden">
               <animateMotion dur="0.8s" repeatCount="1" fill="freeze" path="M 780 210 C 820 210, 830 130, 880 130" />
             </circle>
-            <circle id="pulse-ball-4" r="5" fill="#06b6d4" filter="url(#glowEffect)" class="hidden">
+            <circle id="pulse-ball-4" r="5" fill="#2563eb" filter="url(#glowEffect)" class="hidden">
               <animateMotion dur="0.8s" repeatCount="1" fill="freeze" path="M 780 250 C 820 250, 830 330, 880 330" />
             </circle>
           </svg>
@@ -426,7 +418,7 @@
           <div class="relative w-[1100px] h-[520px]">
             
             <!-- NODE 1: Webhook Trigger -->
-            <div id="node-1" onclick="inspectNode('webhook')" class="absolute left-10 top-36 w-48 bg-surface-850 hover:bg-surface-800 border-2 border-surface-border hover:border-brand-500/60 rounded-xl p-3.5 shadow-xl transition-all cursor-pointer group">
+            <div id="node-1" onclick="inspectNode('webhook')" class="absolute left-10 top-36 w-48 bg-surface-850 hover:bg-surface-800 border-2 border-surface-border hover:border-brand-400 rounded-xl p-3.5 shadow-xl transition-all cursor-pointer group">
               <div class="flex items-center justify-between mb-2">
                 <div class="w-8 h-8 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold">
                   <i data-lucide="webhook" class="w-4 h-4"></i>
@@ -437,33 +429,33 @@
               <p class="text-[11px] font-mono text-slate-400 mt-1">POST /leads/signup</p>
               <!-- Connection Port Out -->
               <span class="absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-surface-900 border-2 border-brand-500 flex items-center justify-center">
-                <span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
               </span>
             </div>
 
             <!-- NODE 2: AI Agent (Claude 3.5 / GPT-4o) -->
-            <div id="node-2" onclick="inspectNode('ai-agent')" class="absolute left-[380px] top-32 w-52 bg-surface-850 hover:bg-surface-800 border-2 border-surface-border hover:border-brand-purple/60 rounded-xl p-3.5 shadow-xl transition-all cursor-pointer group">
+            <div id="node-2" onclick="inspectNode('ai-agent')" class="absolute left-[380px] top-32 w-52 bg-surface-850 hover:bg-surface-800 border-2 border-surface-border hover:border-brand-accent/60 rounded-xl p-3.5 shadow-xl transition-all cursor-pointer group">
               <div class="flex items-center justify-between mb-2">
-                <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
                   <i data-lucide="bot" class="w-4 h-4"></i>
                 </div>
                 <span id="badge-node-2" class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700">Listo</span>
               </div>
-              <h4 class="text-xs font-bold text-white group-hover:text-purple-300 transition-colors">Agente IA Evaluador</h4>
+              <h4 class="text-xs font-bold text-white group-hover:text-cyan-300 transition-colors">Visionarius AI Agent</h4>
               <p class="text-[11px] font-mono text-slate-400 mt-1">GPT-4o + Tool: LinkedIn</p>
-              <div class="mt-2.5 pt-2 border-t border-surface-border text-[10px] text-purple-300 flex items-center gap-1">
+              <div class="mt-2.5 pt-2 border-t border-surface-border text-[10px] text-cyan-300 flex items-center gap-1">
                 <i data-lucide="sparkles" class="w-3 h-3"></i>
                 <span>Calcula Lead Score (0-100)</span>
               </div>
               <!-- In & Out Ports -->
               <span class="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-surface-900 border-2 border-brand-500"></span>
-              <span class="absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-surface-900 border-2 border-purple-500"></span>
+              <span class="absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-surface-900 border-2 border-cyan-400"></span>
             </div>
 
             <!-- NODE 3: Router / If-Else Switch -->
-            <div id="node-3" onclick="inspectNode('router')" class="absolute left-[650px] top-36 w-36 bg-surface-850 hover:bg-surface-800 border-2 border-surface-border hover:border-amber-500/60 rounded-xl p-3 shadow-xl transition-all cursor-pointer group">
+            <div id="node-3" onclick="inspectNode('router')" class="absolute left-[650px] top-36 w-36 bg-surface-850 hover:bg-surface-800 border-2 border-surface-border hover:border-indigo-400/60 rounded-xl p-3 shadow-xl transition-all cursor-pointer group">
               <div class="flex items-center justify-between mb-2">
-                <div class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center">
+                <div class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
                   <i data-lucide="git-branch" class="w-3.5 h-3.5"></i>
                 </div>
                 <span id="badge-node-3" class="text-[10px] font-mono px-1.5 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700">Listo</span>
@@ -471,27 +463,27 @@
               <h4 class="text-xs font-bold text-white">Score &gt; 80?</h4>
               <p class="text-[10px] font-mono text-slate-400 mt-0.5">Filtro Condicional</p>
               <!-- Ports -->
-              <span class="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-surface-900 border-2 border-purple-500"></span>
-              <span class="absolute -right-2 top-1/3 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-emerald-500 text-[8px] text-white flex items-center justify-center" title="True: Score alto">T</span>
-              <span class="absolute -right-2 top-2/3 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-cyan-500 text-[8px] text-white flex items-center justify-center" title="False: Score normal">F</span>
+              <span class="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-surface-900 border-2 border-cyan-400"></span>
+              <span class="absolute -right-2 top-1/3 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-brand-500 text-[8px] text-white flex items-center justify-center" title="True: Score alto">T</span>
+              <span class="absolute -right-2 top-2/3 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-slate-600 text-[8px] text-white flex items-center justify-center" title="False: Score normal">F</span>
             </div>
 
             <!-- NODE 4A: Slack + Salesforce (High Priority) -->
-            <div id="node-4" onclick="inspectNode('slack')" class="absolute left-[880px] top-14 w-48 bg-surface-850 hover:bg-surface-800 border-2 border-surface-border hover:border-emerald-500/60 rounded-xl p-3 shadow-xl transition-all cursor-pointer group">
+            <div id="node-4" onclick="inspectNode('slack')" class="absolute left-[880px] top-14 w-48 bg-surface-850 hover:bg-surface-800 border-2 border-surface-border hover:border-brand-400/60 rounded-xl p-3 shadow-xl transition-all cursor-pointer group">
               <div class="flex items-center justify-between mb-2">
                 <div class="flex items-center gap-1.5">
-                  <div class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                  <div class="w-7 h-7 rounded-lg bg-brand-500/20 text-brand-300 flex items-center justify-center">
                     <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
                   </div>
-                  <div class="w-7 h-7 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center">
+                  <div class="w-7 h-7 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
                     <i data-lucide="database" class="w-3.5 h-3.5"></i>
                   </div>
                 </div>
                 <span id="badge-node-4" class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700">Listo</span>
               </div>
-              <h4 class="text-xs font-bold text-white group-hover:text-emerald-300">Slack & Salesforce</h4>
+              <h4 class="text-xs font-bold text-white group-hover:text-brand-300">Slack & Salesforce</h4>
               <p class="text-[10px] font-mono text-slate-400 mt-0.5">Alerta urgente a Ventas VIP</p>
-              <span class="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-surface-900 border-2 border-emerald-500"></span>
+              <span class="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-surface-900 border-2 border-brand-400"></span>
             </div>
 
             <!-- NODE 4B: PostgreSQL + Email Nurture (Standard) -->
@@ -501,7 +493,7 @@
                   <div class="w-7 h-7 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
                     <i data-lucide="hard-drive" class="w-3.5 h-3.5"></i>
                   </div>
-                  <div class="w-7 h-7 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center">
+                  <div class="w-7 h-7 rounded-lg bg-blue-600/20 text-blue-400 flex items-center justify-center">
                     <i data-lucide="mail" class="w-3.5 h-3.5"></i>
                   </div>
                 </div>
@@ -509,7 +501,7 @@
               </div>
               <h4 class="text-xs font-bold text-white group-hover:text-cyan-300">PostgreSQL + Email</h4>
               <p class="text-[10px] font-mono text-slate-400 mt-0.5">Guardar Lead & Bienvenida</p>
-              <span class="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-surface-900 border-2 border-cyan-500"></span>
+              <span class="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-surface-900 border-2 border-cyan-400"></span>
             </div>
 
           </div>
@@ -520,7 +512,7 @@
           <div class="flex items-center justify-between mb-2">
             <div class="flex items-center gap-2">
               <i data-lucide="terminal" class="w-4 h-4 text-brand-400"></i>
-              <span class="text-xs font-mono font-semibold text-slate-300">Consola de Ejecución & Payload JSON:</span>
+              <span class="text-xs font-mono font-semibold text-slate-300">Visionarius Console & Payload JSON:</span>
               <span id="live-status-pill" class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-surface-800 text-slate-400">Esperando ejecución...</span>
             </div>
             <div class="text-[11px] text-slate-400 font-mono">
@@ -529,8 +521,9 @@
           </div>
           
           <!-- Terminal Code Viewer -->
-          <pre id="json-viewer" class="bg-surface-950 rounded-xl p-3 text-xs font-mono text-emerald-400 overflow-x-auto max-h-36 border border-surface-border/50 selection:bg-brand-500/30">
+          <pre id="json-viewer" class="bg-surface-950 rounded-xl p-3 text-xs font-mono text-cyan-300 overflow-x-auto max-h-36 border border-surface-border/50 selection:bg-brand-500/30">
 {
+  "system": "Visionarius Orchestrator",
   "event": "lead.created",
   "source": "https://myapp.com/signup",
   "lead": {
@@ -555,12 +548,12 @@
           </div>
           <h3 class="text-base font-bold text-white mb-1">Sin límites de memoria ni ejecuciones</h3>
           <p class="text-xs text-slate-400 leading-relaxed">
-            A diferencia de Zapier o Make donde cada paso gasta "tasks" o créditos, en NodePulse autoalojado ejecutas flujos ilimitados sin sorpresas a fin de mes.
+            A diferencia de Zapier o Make donde cada paso gasta "tasks" o créditos, en Visionarius autoalojado ejecutas flujos ilimitados sin sorpresas a fin de mes.
           </p>
         </div>
 
-        <div class="p-5 rounded-2xl bg-surface-850/60 border border-surface-border hover:border-purple-500/40 transition-colors">
-          <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-3">
+        <div class="p-5 rounded-2xl bg-surface-850/60 border border-surface-border hover:border-cyan-500/40 transition-colors">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-3">
             <i data-lucide="bot" class="w-5 h-5"></i>
           </div>
           <h3 class="text-base font-bold text-white mb-1">Agentes Autónomos Multi-Modelo</h3>
@@ -569,8 +562,8 @@
           </p>
         </div>
 
-        <div class="p-5 rounded-2xl bg-surface-850/60 border border-surface-border hover:border-emerald-500/40 transition-colors">
-          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
+        <div class="p-5 rounded-2xl bg-surface-850/60 border border-surface-border hover:border-blue-400/40 transition-colors">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-3">
             <i data-lucide="shield-check" class="w-5 h-5"></i>
           </div>
           <h3 class="text-base font-bold text-white mb-1">Privacidad y Soberanía de Datos</h3>
@@ -591,32 +584,32 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <!-- Left: Information Column -->
         <div class="lg:col-span-6 space-y-6">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-mono font-semibold">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-300 text-xs font-mono font-semibold">
             <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
             <span>Orquestación de Agentes IA de Última Generación</span>
           </div>
 
           <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Convierte a los LLMs en <span class="bg-gradient-to-r from-purple-400 to-brand-400 bg-clip-text text-transparent">agentes que actúan</span> en tu negocio.
+            Convierte a los LLMs en <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">agentes que actúan</span> en tu negocio.
           </h2>
 
           <p class="text-slate-300 text-base leading-relaxed">
-            NodePulse no es un simple wrapper de OpenAI. Provee una arquitectura completa para agentes autónomos: memoria conversacional, bases de datos vectoriales (Pinecone, Qdrant, Supabase), invocación de funciones (Tool Calling) y RAG avanzado.
+            Visionarius no es un simple wrapper de OpenAI. Provee una arquitectura integral para agentes autónomos: memoria conversacional, bases de datos vectoriales (Pinecone, Qdrant, Supabase), invocación de funciones (Tool Calling) y RAG avanzado.
           </p>
 
           <div class="space-y-4 pt-2">
             <div class="flex items-start gap-3.5">
-              <div class="w-6 h-6 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div class="w-6 h-6 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center flex-shrink-0 mt-0.5">
                 <i data-lucide="check" class="w-3.5 h-3.5"></i>
               </div>
               <div>
                 <h4 class="text-sm font-bold text-white">Soporte Universal de Proveedores</h4>
-                <p class="text-xs text-slate-400 mt-0.5">Intercambia entre Anthropic Claude 3.5, OpenAI GPT-4o, Google Gemini 2.0 y modelos locales vía Ollama o vLLM sin cambiar la lógica del flujo.</p>
+                <p class="text-xs text-slate-400 mt-0.5">Intercambia entre Anthropic Claude 3.5, OpenAI GPT-4o, Google Gemini 2.0 y modelos locales vía Ollama sin cambiar la lógica del flujo.</p>
               </div>
             </div>
 
             <div class="flex items-start gap-3.5">
-              <div class="w-6 h-6 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div class="w-6 h-6 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center flex-shrink-0 mt-0.5">
                 <i data-lucide="check" class="w-3.5 h-3.5"></i>
               </div>
               <div>
@@ -626,7 +619,7 @@
             </div>
 
             <div class="flex items-start gap-3.5">
-              <div class="w-6 h-6 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div class="w-6 h-6 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center flex-shrink-0 mt-0.5">
                 <i data-lucide="check" class="w-3.5 h-3.5"></i>
               </div>
               <div>
@@ -637,7 +630,7 @@
           </div>
 
           <div class="pt-4 flex items-center gap-4">
-            <a href="#templates" class="inline-flex items-center gap-2 text-sm font-bold text-purple-400 hover:text-purple-300 group">
+            <a href="#templates" class="inline-flex items-center gap-2 text-sm font-bold text-brand-400 hover:text-brand-300 group">
               <span>Explorar plantillas de agentes IA</span>
               <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
             </a>
@@ -646,13 +639,13 @@
 
         <!-- Right: AI Agent Blueprint Mockup -->
         <div class="lg:col-span-6">
-          <div class="rounded-2xl border border-surface-border bg-surface-900 p-6 shadow-2xl glow-purple relative overflow-hidden">
+          <div class="rounded-2xl border border-surface-border bg-surface-900 p-6 shadow-2xl glow-cyan relative overflow-hidden">
             <div class="flex items-center justify-between pb-4 border-b border-surface-border text-xs">
               <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-purple-400 animate-pulse"></span>
-                <span class="font-mono font-bold text-white">Nodo: AI Agent (Auto-ReAct)</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                <span class="font-mono font-bold text-white">Nodo: Visionarius AI Agent (ReAct)</span>
               </div>
-              <span class="px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 font-mono text-[10px]">Model: claude-3-5-sonnet</span>
+              <span class="px-2 py-0.5 rounded bg-brand-500/20 text-brand-300 font-mono text-[10px]">Model: claude-3-5-sonnet</span>
             </div>
 
             <!-- Agent Node Sub-diagram -->
@@ -660,7 +653,7 @@
               <!-- Sub-node 1: Model -->
               <div class="flex items-center justify-between p-3 rounded-xl bg-surface-850 border border-surface-border/70">
                 <div class="flex items-center gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold text-xs">
+                  <div class="w-8 h-8 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center font-bold text-xs">
                     LLM
                   </div>
                   <div>
@@ -668,13 +661,13 @@
                     <div class="text-[11px] text-slate-400 font-mono">Anthropic Claude 3.5 Sonnet</div>
                   </div>
                 </div>
-                <span class="text-emerald-400 text-xs font-mono font-semibold">Conectado</span>
+                <span class="text-cyan-400 text-xs font-mono font-semibold">Conectado</span>
               </div>
 
               <!-- Sub-node 2: Vector Store -->
               <div class="flex items-center justify-between p-3 rounded-xl bg-surface-850 border border-surface-border/70">
                 <div class="flex items-center gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-brand-cyan/10 text-cyan-400 flex items-center justify-center">
+                  <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
                     <i data-lucide="database" class="w-4 h-4"></i>
                   </div>
                   <div>
@@ -689,7 +682,7 @@
               <div class="p-3 rounded-xl bg-surface-850 border border-surface-border/70 space-y-2">
                 <div class="text-xs font-bold text-white flex items-center justify-between">
                   <span>Herramientas Disponibles (Tools):</span>
-                  <span class="text-[10px] font-mono text-purple-300">3 Activas</span>
+                  <span class="text-[10px] font-mono text-brand-300">3 Activas</span>
                 </div>
                 <div class="flex flex-wrap gap-2 text-[11px] font-mono">
                   <span class="px-2.5 py-1 rounded-lg bg-surface-800 border border-surface-border text-slate-300 flex items-center gap-1.5">
@@ -697,19 +690,19 @@
                     Búsqueda Web (Tavily)
                   </span>
                   <span class="px-2.5 py-1 rounded-lg bg-surface-800 border border-surface-border text-slate-300 flex items-center gap-1.5">
-                    <i data-lucide="code" class="w-3 h-3 text-purple-400"></i>
+                    <i data-lucide="code" class="w-3 h-3 text-cyan-400"></i>
                     Python Sandbox
                   </span>
                   <span class="px-2.5 py-1 rounded-lg bg-surface-800 border border-surface-border text-slate-300 flex items-center gap-1.5">
-                    <i data-lucide="mail" class="w-3 h-3 text-cyan-400"></i>
+                    <i data-lucide="mail" class="w-3 h-3 text-blue-400"></i>
                     SendGrid Mailer
                   </span>
                 </div>
               </div>
 
               <!-- Output Preview -->
-              <div class="p-3.5 rounded-xl bg-surface-950 border border-purple-500/30 text-xs font-mono text-slate-300 space-y-1">
-                <div class="text-purple-400 font-bold flex items-center gap-1.5">
+              <div class="p-3.5 rounded-xl bg-surface-950 border border-brand-500/30 text-xs font-mono text-slate-300 space-y-1">
+                <div class="text-cyan-400 font-bold flex items-center gap-1.5">
                   <i data-lucide="activity" class="w-3.5 h-3.5"></i>
                   <span>Pensamiento del Agente (Reasoning trace):</span>
                 </div>
@@ -746,7 +739,7 @@
 
         <!-- Template Category Pills -->
         <div class="flex flex-wrap justify-center gap-2.5 mt-8" id="template-tabs">
-          <button onclick="switchTemplateTab('all')" class="template-tab-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-brand-500 text-white transition-all shadow-md shadow-brand-500/30">Todos (120+)</button>
+          <button onclick="switchTemplateTab('all')" class="template-tab-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white transition-all shadow-md shadow-brand-500/30">Todos (120+)</button>
           <button onclick="switchTemplateTab('ai')" class="template-tab-btn px-4 py-2 rounded-xl text-xs font-semibold bg-surface-800 hover:bg-surface-750 text-slate-300 transition-all border border-surface-border">Agentes IA</button>
           <button onclick="switchTemplateTab('devops')" class="template-tab-btn px-4 py-2 rounded-xl text-xs font-semibold bg-surface-800 hover:bg-surface-750 text-slate-300 transition-all border border-surface-border">DevOps & Cloud</button>
           <button onclick="switchTemplateTab('sales')" class="template-tab-btn px-4 py-2 rounded-xl text-xs font-semibold bg-surface-800 hover:bg-surface-750 text-slate-300 transition-all border border-surface-border">Ventas & CRM</button>
@@ -763,13 +756,13 @@
             <div>
               <div class="flex items-center justify-between mb-4">
                 <div class="flex -space-x-2">
-                  <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="bot" class="w-4 h-4"></i></div>
+                  <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="bot" class="w-4 h-4"></i></div>
                   <div class="w-8 h-8 rounded-lg bg-brand-500/20 text-brand-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="slack" class="w-4 h-4"></i></div>
-                  <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="database" class="w-4 h-4"></i></div>
+                  <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="database" class="w-4 h-4"></i></div>
                 </div>
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-purple-500/10 text-purple-300 border border-purple-500/30">Agente IA</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-brand-500/10 text-brand-300 border border-brand-500/30">Agente IA</span>
               </div>
-              <h3 class="text-base font-bold text-white group-hover:text-brand-400 transition-colors">Copiloto de Soporte con RAG en Slack</h3>
+              <h3 class="text-base font-bold text-white group-hover:text-brand-300 transition-colors">Copiloto de Soporte con RAG en Slack</h3>
               <p class="text-xs text-slate-400 mt-2 leading-relaxed">
                 Escucha dudas en canales de Slack, busca respuestas en tus manuales de Notion y redacta respuestas con enlaces directos.
               </p>
@@ -791,12 +784,12 @@
               <div class="flex items-center justify-between mb-4">
                 <div class="flex -space-x-2">
                   <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="credit-card" class="w-4 h-4"></i></div>
-                  <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="file-text" class="w-4 h-4"></i></div>
-                  <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="send" class="w-4 h-4"></i></div>
+                  <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="file-text" class="w-4 h-4"></i></div>
+                  <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="send" class="w-4 h-4"></i></div>
                 </div>
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-amber-500/10 text-amber-300 border border-amber-500/30">Ventas</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">Ventas</span>
               </div>
-              <h3 class="text-base font-bold text-white group-hover:text-brand-400 transition-colors">Stripe → Factura Automática → Enviar PDF</h3>
+              <h3 class="text-base font-bold text-white group-hover:text-brand-300 transition-colors">Stripe → Factura Automática → Enviar PDF</h3>
               <p class="text-xs text-slate-400 mt-2 leading-relaxed">
                 Al completarse un cobro en Stripe, genera una factura oficial en PDF con desglose de impuestos y la envía por correo con copia al contador.
               </p>
@@ -818,12 +811,12 @@
               <div class="flex items-center justify-between mb-4">
                 <div class="flex -space-x-2">
                   <div class="w-8 h-8 rounded-lg bg-rose-500/20 text-rose-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="alert-triangle" class="w-4 h-4"></i></div>
-                  <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="terminal" class="w-4 h-4"></i></div>
+                  <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="terminal" class="w-4 h-4"></i></div>
                   <div class="w-8 h-8 rounded-lg bg-brand-500/20 text-brand-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="phone-call" class="w-4 h-4"></i></div>
                 </div>
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-rose-500/10 text-rose-300 border border-rose-500/30">DevOps</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-blue-500/10 text-blue-300 border border-blue-500/30">DevOps</span>
               </div>
-              <h3 class="text-base font-bold text-white group-hover:text-brand-400 transition-colors">Auto-Remediación de Incidentes Cloud</h3>
+              <h3 class="text-base font-bold text-white group-hover:text-brand-300 transition-colors">Auto-Remediación de Incidentes Cloud</h3>
               <p class="text-xs text-slate-400 mt-2 leading-relaxed">
                 Monitorea alertas de Datadog/Prometheus, reinicia pods defectuosos en Kubernetes y crea un informe post-mortem con IA en Notion.
               </p>
@@ -845,12 +838,12 @@
               <div class="flex items-center justify-between mb-4">
                 <div class="flex -space-x-2">
                   <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="rss" class="w-4 h-4"></i></div>
-                  <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
+                  <div class="w-8 h-8 rounded-lg bg-brand-500/20 text-brand-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
                   <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="linkedin" class="w-4 h-4"></i></div>
                 </div>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">Marketing</span>
               </div>
-              <h3 class="text-base font-bold text-white group-hover:text-brand-400 transition-colors">Curador de Noticias & Redactor LinkedIn</h3>
+              <h3 class="text-base font-bold text-white group-hover:text-brand-300 transition-colors">Curador de Noticias & Redactor LinkedIn</h3>
               <p class="text-xs text-slate-400 mt-2 leading-relaxed">
                 Escanea feeds RSS de tu industria, resume las mejores noticias con un modelo de IA y programa publicaciones virales optimizadas para LinkedIn.
               </p>
@@ -871,13 +864,13 @@
             <div>
               <div class="flex items-center justify-between mb-4">
                 <div class="flex -space-x-2">
-                  <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="mail" class="w-4 h-4"></i></div>
-                  <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="cpu" class="w-4 h-4"></i></div>
+                  <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="mail" class="w-4 h-4"></i></div>
+                  <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="cpu" class="w-4 h-4"></i></div>
                   <div class="w-8 h-8 rounded-lg bg-brand-500/20 text-brand-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="calendar" class="w-4 h-4"></i></div>
                 </div>
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-purple-500/10 text-purple-300 border border-purple-500/30">Agente IA</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-brand-500/10 text-brand-300 border border-brand-500/30">Agente IA</span>
               </div>
-              <h3 class="text-base font-bold text-white group-hover:text-brand-400 transition-colors">Secretario IA para Inbox Zero</h3>
+              <h3 class="text-base font-bold text-white group-hover:text-brand-300 transition-colors">Secretario IA para Inbox Zero</h3>
               <p class="text-xs text-slate-400 mt-2 leading-relaxed">
                 Clasifica correos de Gmail o Outlook, rechaza spam automáticamente, redacta borradores de respuesta y agenda reuniones en Google Calendar.
               </p>
@@ -899,12 +892,12 @@
               <div class="flex items-center justify-between mb-4">
                 <div class="flex -space-x-2">
                   <div class="w-8 h-8 rounded-lg bg-brand-500/20 text-brand-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="shopping-bag" class="w-4 h-4"></i></div>
-                  <div class="w-8 h-8 rounded-lg bg-green-500/20 text-green-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="message-circle" class="w-4 h-4"></i></div>
-                  <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="table" class="w-4 h-4"></i></div>
+                  <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="message-circle" class="w-4 h-4"></i></div>
+                  <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 border border-surface-850 flex items-center justify-center font-bold text-xs"><i data-lucide="table" class="w-4 h-4"></i></div>
                 </div>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-brand-500/10 text-brand-300 border border-brand-500/30">E-Commerce</span>
               </div>
-              <h3 class="text-base font-bold text-white group-hover:text-brand-400 transition-colors">Recuperador de Carritos por WhatsApp</h3>
+              <h3 class="text-base font-bold text-white group-hover:text-brand-300 transition-colors">Recuperador de Carritos por WhatsApp</h3>
               <p class="text-xs text-slate-400 mt-2 leading-relaxed">
                 Detecta carritos abandonados en Shopify/WooCommerce, espera 45 minutos y envía un mensaje personalizado de WhatsApp con un cupón del 10%.
               </p>
@@ -938,7 +931,7 @@
           Conecta con todo tu stack tecnológico
         </h2>
         <p class="text-slate-400 text-sm sm:text-base mt-2">
-          Más de 500 conectores nativos preconstruidos. Y si tu servicio no está en la lista, usa nuestro nodo de solicitud HTTP genérico con importador de cURL.
+          Más de 500 conectores nativos preconstruidos. Y si tu servicio no está en la lista, usa el nodo HTTP genérico de Visionarius con importador de cURL.
         </p>
 
         <!-- Search Bar for Integrations -->
@@ -959,7 +952,7 @@
         
         <!-- App: OpenAI -->
         <div class="integration-item p-4 rounded-xl bg-surface-850/80 border border-surface-border hover:border-brand-500/50 hover:bg-surface-800 transition-all flex flex-col items-center text-center group cursor-pointer" data-name="OpenAI GPT-4o ChatGPT AI">
-          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
             <i data-lucide="sparkles" class="w-6 h-6"></i>
           </div>
           <span class="text-xs font-bold text-white group-hover:text-brand-300">OpenAI</span>
@@ -968,7 +961,7 @@
 
         <!-- App: Claude Anthropic -->
         <div class="integration-item p-4 rounded-xl bg-surface-850/80 border border-surface-border hover:border-brand-500/50 hover:bg-surface-800 transition-all flex flex-col items-center text-center group cursor-pointer" data-name="Anthropic Claude Sonnet Opus AI">
-          <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
             <i data-lucide="bot" class="w-6 h-6"></i>
           </div>
           <span class="text-xs font-bold text-white group-hover:text-brand-300">Anthropic</span>
@@ -977,7 +970,7 @@
 
         <!-- App: Slack -->
         <div class="integration-item p-4 rounded-xl bg-surface-850/80 border border-surface-border hover:border-brand-500/50 hover:bg-surface-800 transition-all flex flex-col items-center text-center group cursor-pointer" data-name="Slack Chat Canales Mensajes">
-          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-300 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
             <i data-lucide="message-square" class="w-6 h-6"></i>
           </div>
           <span class="text-xs font-bold text-white group-hover:text-brand-300">Slack</span>
@@ -986,7 +979,7 @@
 
         <!-- App: PostgreSQL -->
         <div class="integration-item p-4 rounded-xl bg-surface-850/80 border border-surface-border hover:border-brand-500/50 hover:bg-surface-800 transition-all flex flex-col items-center text-center group cursor-pointer" data-name="PostgreSQL Postgres SQL Base de datos">
-          <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-blue-600/15 text-blue-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
             <i data-lucide="database" class="w-6 h-6"></i>
           </div>
           <span class="text-xs font-bold text-white group-hover:text-brand-300">PostgreSQL</span>
@@ -1013,7 +1006,7 @@
 
         <!-- App: Google Sheets -->
         <div class="integration-item p-4 rounded-xl bg-surface-850/80 border border-surface-border hover:border-brand-500/50 hover:bg-surface-800 transition-all flex flex-col items-center text-center group cursor-pointer" data-name="Google Sheets Tablas Hojas de calculo Drive">
-          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
             <i data-lucide="sheet" class="w-6 h-6"></i>
           </div>
           <span class="text-xs font-bold text-white group-hover:text-brand-300">Google Sheets</span>
@@ -1031,7 +1024,7 @@
 
         <!-- App: Discord -->
         <div class="integration-item p-4 rounded-xl bg-surface-850/80 border border-surface-border hover:border-brand-500/50 hover:bg-surface-800 transition-all flex flex-col items-center text-center group cursor-pointer" data-name="Discord Bots Servidores Comunidad">
-          <div class="w-12 h-12 rounded-xl bg-indigo-600/10 text-indigo-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
             <i data-lucide="disc" class="w-6 h-6"></i>
           </div>
           <span class="text-xs font-bold text-white group-hover:text-brand-300">Discord</span>
@@ -1040,7 +1033,7 @@
 
         <!-- App: Airtable -->
         <div class="integration-item p-4 rounded-xl bg-surface-850/80 border border-surface-border hover:border-brand-500/50 hover:bg-surface-800 transition-all flex flex-col items-center text-center group cursor-pointer" data-name="Airtable Base Relacional CRM">
-          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-cyan-600/10 text-cyan-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
             <i data-lucide="layout-grid" class="w-6 h-6"></i>
           </div>
           <span class="text-xs font-bold text-white group-hover:text-brand-300">Airtable</span>
@@ -1057,8 +1050,8 @@
         </div>
 
         <!-- App: Custom HTTP / Webhook -->
-        <div class="integration-item p-4 rounded-xl bg-surface-850/80 border border-brand-500/40 hover:border-brand-500 hover:bg-surface-800 transition-all flex flex-col items-center text-center group cursor-pointer" data-name="HTTP Request REST GraphQL Webhook cURL">
-          <div class="w-12 h-12 rounded-xl bg-brand-500/15 text-brand-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
+        <div class="integration-item p-4 rounded-xl bg-surface-850/80 border border-brand-500/40 hover:border-brand-400 hover:bg-surface-800 transition-all flex flex-col items-center text-center group cursor-pointer" data-name="HTTP Request REST GraphQL Webhook cURL">
+          <div class="w-12 h-12 rounded-xl bg-brand-500/15 text-brand-300 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
             <i data-lucide="globe" class="w-6 h-6"></i>
           </div>
           <span class="text-xs font-bold text-brand-400 group-hover:text-brand-300">HTTP Request</span>
@@ -1069,14 +1062,14 @@
 
       <!-- No results message -->
       <div id="no-integrations-msg" class="hidden text-center py-10 text-slate-400 text-sm">
-        No se encontraron aplicaciones con ese nombre. Recuerda que puedes conectar <strong class="text-white">cualquier API del mundo</strong> con nuestro nodo HTTP genérico.
+        No se encontraron aplicaciones con ese nombre. Recuerda que puedes conectar <strong class="text-white">cualquier API del mundo</strong> con el nodo HTTP genérico de Visionarius.
       </div>
 
     </div>
   </section>
 
 
-  <!-- ==================== SELF-HOSTED VS CLOSED SAAS (THE N8N PHILOSOPHY) ==================== -->
+  <!-- ==================== SELF-HOSTED VS CLOSED SAAS (VISIONARIUS PHILOSOPHY) ==================== -->
   <section id="self-hosted" class="py-20 md:py-28 bg-surface-900 border-t border-surface-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -1097,7 +1090,7 @@
           </p>
 
           <p class="text-slate-300 text-base leading-relaxed">
-            Con <strong class="text-brand-400">NodePulse</strong> puedes desplegar en tu propio servidor VPS (Hetzner, DigitalOcean, AWS, GCP) por apenas $5/mes con <strong class="text-white">ejecuciones y usuarios ilimitados</strong>.
+            Con <strong class="text-brand-400">Visionarius</strong> puedes desplegar en tu propio servidor VPS (Hetzner, DigitalOcean, AWS, GCP) por apenas $5/mes con <strong class="text-white">ejecuciones y usuarios ilimitados</strong>.
           </p>
 
           <div class="grid grid-cols-2 gap-4 pt-2">
@@ -1108,7 +1101,7 @@
             </div>
 
             <div class="p-4 rounded-xl bg-surface-850 border border-surface-border">
-              <div class="text-2xl font-extrabold text-emerald-400">100%</div>
+              <div class="text-2xl font-extrabold text-cyan-400">100%</div>
               <div class="text-xs text-slate-300 font-semibold mt-1">Control de Datos</div>
               <p class="text-[11px] text-slate-400 mt-1">Tus contraseñas y base de datos nunca viajan a servidores ajenos.</p>
             </div>
@@ -1117,7 +1110,7 @@
 
         <!-- Right: Code Snippets for Deployment -->
         <div class="lg:col-span-6">
-          <div class="rounded-2xl border border-surface-border bg-surface-950 p-6 shadow-2xl space-y-4">
+          <div class="rounded-2xl border border-surface-border bg-surface-950 p-6 shadow-2xl space-y-4 glow-blue-sm">
             
             <div class="flex items-center justify-between pb-3 border-b border-surface-border">
               <div class="flex items-center gap-2">
@@ -1131,30 +1124,30 @@
             <div>
               <div class="flex items-center justify-between text-xs text-slate-400 mb-1.5 font-mono">
                 <span>Opción 1: Docker CLI</span>
-                <button onclick="copyToClipboard('docker run -d --name nodepulse -p 5678:5678 -v nodepulse_data:/home/node/.nodepulse nodepulse/nodepulse:latest', 'Comando Docker CLI copiado')" class="text-brand-400 hover:text-brand-300 flex items-center gap-1">
+                <button onclick="copyToClipboard('docker run -d --name visionarius -p 5678:5678 -v visionarius_data:/home/node/.visionarius visionarius/visionarius:latest', 'Comando Docker CLI copiado')" class="text-brand-400 hover:text-brand-300 flex items-center gap-1">
                   <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                   <span>Copiar</span>
                 </button>
               </div>
-              <pre class="p-3 rounded-xl bg-surface-900 border border-surface-border text-xs font-mono text-slate-200 overflow-x-auto select-all"><code>docker run -d --name nodepulse \
+              <pre class="p-3 rounded-xl bg-surface-900 border border-surface-border text-xs font-mono text-cyan-300 overflow-x-auto select-all"><code>docker run -d --name visionarius \
   -p 5678:5678 \
-  -v nodepulse_data:/home/node/.nodepulse \
-  nodepulse/nodepulse:latest</code></pre>
+  -v visionarius_data:/home/node/.visionarius \
+  visionarius/visionarius:latest</code></pre>
             </div>
 
             <!-- Tab: Docker Compose -->
             <div>
               <div class="flex items-center justify-between text-xs text-slate-400 mb-1.5 font-mono">
                 <span>Opción 2: docker-compose.yml con PostgreSQL</span>
-                <button onclick="copyToClipboard('version: \'3.8\'\nservices:\n  nodepulse:\n    image: nodepulse/nodepulse:latest\n    restart: always\n    ports:\n      - \"5678:5678\"\n    environment:\n      - DB_TYPE=postgresdb\n      - DB_POSTGRESDB_HOST=postgres\n      - N8N_ENCRYPTION_KEY=supersecretkey', 'docker-compose copiado')" class="text-brand-400 hover:text-brand-300 flex items-center gap-1">
+                <button onclick="copyToClipboard('version: \'3.8\'\nservices:\n  visionarius:\n    image: visionarius/visionarius:latest\n    restart: always\n    ports:\n      - \"5678:5678\"\n    environment:\n      - DB_TYPE=postgresdb\n      - DB_POSTGRESDB_HOST=postgres\n      - VISIONARIUS_ENCRYPTION_KEY=supersecretkey', 'docker-compose copiado')" class="text-brand-400 hover:text-brand-300 flex items-center gap-1">
                   <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                   <span>Copiar</span>
                 </button>
               </div>
               <pre class="p-3 rounded-xl bg-surface-900 border border-surface-border text-xs font-mono text-slate-300 overflow-x-auto select-all"><code>version: '3.8'
 services:
-  nodepulse:
-    image: nodepulse/nodepulse:latest
+  visionarius:
+    image: visionarius/visionarius:latest
     restart: always
     ports:
       - "5678:5678"
@@ -1164,7 +1157,7 @@ services:
             </div>
 
             <div class="pt-2 text-xs text-slate-400 flex items-center gap-2">
-              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i>
+              <i data-lucide="check-circle" class="w-4 h-4 text-cyan-400 flex-shrink-0"></i>
               <span>Compatible con Kubernetes, Helm, Unraid, Portainer y Railway.</span>
             </div>
 
@@ -1176,16 +1169,16 @@ services:
   </section>
 
 
-  <!-- ==================== COMPARISON TABLE: NODEPULSE VS ZAPIER VS MAKE ==================== -->
+  <!-- ==================== COMPARISON TABLE: VISIONARIUS VS ZAPIER VS MAKE ==================== -->
   <section class="py-20 md:py-28 bg-surface-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-14">
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          ¿Cómo se compara con otras plataformas?
+          ¿Cómo se compara Visionarius con otras plataformas?
         </h2>
         <p class="text-slate-400 text-sm sm:text-base mt-2">
-          Mira por qué miles de desarrolladores e ingenieros de automatización migran a NodePulse.
+          Mira por qué miles de desarrolladores e ingenieros de automatización migran a Visionarius.
         </p>
       </div>
 
@@ -1196,7 +1189,7 @@ services:
             <tr>
               <th scope="col" class="py-4 px-6">Característica</th>
               <th scope="col" class="py-4 px-6 text-brand-400 font-bold bg-brand-500/10 border-x border-brand-500/20 text-center">
-                NodePulse (OSS)
+                Visionarius (OSS)
               </th>
               <th scope="col" class="py-4 px-6 text-center">Zapier</th>
               <th scope="col" class="py-4 px-6 text-center">Make (Integromat)</th>
@@ -1206,7 +1199,7 @@ services:
             <!-- Row 1 -->
             <tr class="hover:bg-surface-850/50 transition-colors">
               <td class="py-4 px-6 font-semibold text-white">Código Abierto & Auto-alojable</td>
-              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-emerald-400 font-bold">
+              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-cyan-400 font-bold">
                 <i data-lucide="check" class="w-5 h-5 mx-auto"></i>
                 <span class="text-xs">Sí, 100% control</span>
               </td>
@@ -1223,8 +1216,8 @@ services:
             <!-- Row 2 -->
             <tr class="hover:bg-surface-850/50 transition-colors">
               <td class="py-4 px-6 font-semibold text-white">Límite de Ejecuciones (Self-hosted)</td>
-              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-emerald-400 font-bold">
-                <span class="text-xs font-mono uppercase bg-emerald-500/20 px-2 py-0.5 rounded text-emerald-300">Ilimitadas</span>
+              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-cyan-400 font-bold">
+                <span class="text-xs font-mono uppercase bg-cyan-500/20 px-2 py-0.5 rounded text-cyan-300">Ilimitadas</span>
               </td>
               <td class="py-4 px-6 text-center text-slate-400 font-mono text-xs">
                 Pago por tarea (caro)
@@ -1237,7 +1230,7 @@ services:
             <!-- Row 3 -->
             <tr class="hover:bg-surface-850/50 transition-colors">
               <td class="py-4 px-6 font-semibold text-white">Nodos de Agentes IA & Vector DBs</td>
-              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-emerald-400 font-bold">
+              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-cyan-400 font-bold">
                 <i data-lucide="check" class="w-5 h-5 mx-auto"></i>
                 <span class="text-xs">Multi-proveedor nativo</span>
               </td>
@@ -1252,7 +1245,7 @@ services:
             <!-- Row 4 -->
             <tr class="hover:bg-surface-850/50 transition-colors">
               <td class="py-4 px-6 font-semibold text-white">Ejecución de JavaScript / Python</td>
-              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-emerald-400 font-bold">
+              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-cyan-400 font-bold">
                 <i data-lucide="check" class="w-5 h-5 mx-auto"></i>
                 <span class="text-xs">Nativo completo con npm/pip</span>
               </td>
@@ -1267,7 +1260,7 @@ services:
             <!-- Row 5 -->
             <tr class="hover:bg-surface-850/50 transition-colors">
               <td class="py-4 px-6 font-semibold text-white">Versionado de Flujos en Git</td>
-              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-emerald-400 font-bold">
+              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-cyan-400 font-bold">
                 <i data-lucide="check" class="w-5 h-5 mx-auto"></i>
                 <span class="text-xs">Export JSON / Git Sync</span>
               </td>
@@ -1284,7 +1277,7 @@ services:
             <!-- Row 6 -->
             <tr class="hover:bg-surface-850/50 transition-colors">
               <td class="py-4 px-6 font-semibold text-white">Cumplimiento de Privacidad (GDPR / On-Premise)</td>
-              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-emerald-400 font-bold">
+              <td class="py-4 px-6 text-center bg-brand-500/5 border-x border-brand-500/20 text-cyan-400 font-bold">
                 <i data-lucide="check" class="w-5 h-5 mx-auto"></i>
                 <span class="text-xs">Total (Dentro de tu red)</span>
               </td>
@@ -1313,10 +1306,10 @@ services:
           <span>Planes Transparentes</span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Comienza gratis. Escala sin penalizaciones.
+          Comienza gratis con Visionarius. Escala sin penalizaciones.
         </h2>
         <p class="text-slate-400 text-sm sm:text-base mt-2">
-          Usa la versión comunitaria en tu servidor para siempre, u opta por nuestra nube administrada para olvidarte del mantenimiento de servidores.
+          Usa la versión comunitaria en tu servidor para siempre, u opta por Visionarius Cloud para olvidarte del mantenimiento de infraestructura.
         </p>
 
         <!-- Billing Period Toggle -->
@@ -1327,7 +1320,7 @@ services:
           </button>
           <div class="flex items-center gap-1.5">
             <span class="text-xs font-semibold text-slate-400" id="billing-annual-label">Facturación Anual</span>
-            <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">20% Descuento</span>
+            <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">20% Descuento</span>
           </div>
         </div>
       </div>
@@ -1352,23 +1345,23 @@ services:
 
             <div class="mt-6 pt-6 border-t border-surface-border space-y-3 text-xs text-slate-300">
               <div class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <i data-lucide="check" class="w-4 h-4 text-cyan-400"></i>
                 <span><strong>Ejecuciones ilimitadas</strong> de flujos</span>
               </div>
               <div class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <i data-lucide="check" class="w-4 h-4 text-cyan-400"></i>
                 <span>Despliegue con Docker / Kubernetes</span>
               </div>
               <div class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <i data-lucide="check" class="w-4 h-4 text-cyan-400"></i>
                 <span>Nodos de Agentes IA y RAG incluidos</span>
               </div>
               <div class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <i data-lucide="check" class="w-4 h-4 text-cyan-400"></i>
                 <span>Más de 500 conectores nativos</span>
               </div>
               <div class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <i data-lucide="check" class="w-4 h-4 text-cyan-400"></i>
                 <span>Soporte de la comunidad en Discord</span>
               </div>
             </div>
@@ -1381,24 +1374,24 @@ services:
           </div>
         </div>
 
-        <!-- PLAN 2: Cloud Pro (Recommended) -->
-        <div class="relative rounded-2xl bg-surface-850 border-2 border-brand-500 p-8 flex flex-col justify-between shadow-2xl glow-orange">
+        <!-- PLAN 2: Cloud Pro (Recommended Visionarius) -->
+        <div class="relative rounded-2xl bg-surface-850 border-2 border-brand-500 p-8 flex flex-col justify-between shadow-2xl glow-blue">
           <!-- Featured Badge -->
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-brand-500 to-amber-500 text-white text-[11px] font-bold uppercase tracking-wider shadow-md">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-brand-600 via-brand-500 to-cyan-500 text-white text-[11px] font-bold uppercase tracking-wider shadow-md">
             Más Popular
           </div>
 
           <div>
             <div class="flex items-center justify-between">
-              <span class="text-xs font-mono font-bold text-brand-400 uppercase tracking-wider">Cloud Pro</span>
-              <span class="px-2.5 py-0.5 rounded-full bg-brand-500/20 text-brand-400 text-[10px] font-mono">Totalmente Gestionado</span>
+              <span class="text-xs font-mono font-bold text-brand-400 uppercase tracking-wider">Visionarius Cloud Pro</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-brand-500/20 text-brand-300 text-[10px] font-mono">Totalmente Gestionado</span>
             </div>
             <div class="mt-4 flex items-baseline gap-1">
               <span class="text-4xl font-extrabold text-white price-value" data-monthly="24 €" data-annual="19 €">24 €</span>
               <span class="text-xs text-slate-400">/ mes</span>
             </div>
             <p class="text-xs text-slate-400 mt-2">
-              Para equipos y empresas que quieren la potencia de NodePulse sin gestionar servidores, backups ni actualizaciones.
+              Para equipos que buscan la potencia de Visionarius sin gestionar servidores, backups ni actualizaciones manuales.
             </p>
 
             <div class="mt-6 pt-6 border-t border-surface-border space-y-3 text-xs text-slate-300">
@@ -1430,7 +1423,7 @@ services:
           </div>
 
           <div class="pt-8">
-            <button onclick="celebrateSuccess(event)" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-500 via-brand-600 to-brand-accent hover:from-brand-400 hover:to-brand-500 text-white text-xs font-bold shadow-lg shadow-brand-500/30 transition-all active:scale-98">
+            <button onclick="celebrateSuccess(event)" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-brand-500 to-cyan-500 hover:from-brand-500 hover:to-cyan-400 text-white text-xs font-bold shadow-lg shadow-brand-500/35 transition-all active:scale-98">
               Comenzar Prueba Gratuita (14 días)
             </button>
           </div>
@@ -1441,34 +1434,34 @@ services:
           <div>
             <div class="flex items-center justify-between">
               <span class="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider">Enterprise</span>
-              <span class="px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 text-[10px] font-mono">Custom VPC</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-[10px] font-mono">Custom VPC</span>
             </div>
             <div class="mt-4 flex items-baseline gap-1">
               <span class="text-4xl font-extrabold text-white">A medida</span>
             </div>
             <p class="text-xs text-slate-400 mt-2">
-              Para corporaciones con requisitos estrictos de seguridad, alta disponibilidad multi-región y SLAs.
+              Para corporaciones con requerimientos estrictos de seguridad, alta disponibilidad multi-región y SLAs.
             </p>
 
             <div class="mt-6 pt-6 border-t border-surface-border space-y-3 text-xs text-slate-300">
               <div class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-purple-400"></i>
+                <i data-lucide="check" class="w-4 h-4 text-cyan-400"></i>
                 <span>Ejecuciones ilimitadas en tu VPC o Bare Metal</span>
               </div>
               <div class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-purple-400"></i>
+                <i data-lucide="check" class="w-4 h-4 text-cyan-400"></i>
                 <span>SAML / SSO (Okta, Azure AD, Google Workspace)</span>
               </div>
               <div class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-purple-400"></i>
+                <i data-lucide="check" class="w-4 h-4 text-cyan-400"></i>
                 <span>Control granular de permisos por roles (RBAC)</span>
               </div>
               <div class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-purple-400"></i>
+                <i data-lucide="check" class="w-4 h-4 text-cyan-400"></i>
                 <span>Logs de auditoría y compliance SOC2 / HIPAA</span>
               </div>
               <div class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-purple-400"></i>
+                <i data-lucide="check" class="w-4 h-4 text-cyan-400"></i>
                 <span>SLA del 99.99% y soporte técnico 24/7/365</span>
               </div>
             </div>
@@ -1493,10 +1486,10 @@ services:
       
       <div class="text-center max-w-3xl mx-auto mb-14">
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Amado por más de 100,000 ingenieros y creadores
+          Amado por más de 100,000 ingenieros y líderes técnicos
         </h2>
         <p class="text-slate-400 text-sm sm:text-base mt-2">
-          Mira lo que opinan los equipos que migraron desde soluciones propietarias.
+          Mira lo que opinan los equipos que migraron a Visionarius.
         </p>
       </div>
 
@@ -1504,18 +1497,18 @@ services:
         
         <!-- Review 1 -->
         <div class="p-6 rounded-2xl bg-surface-900 border border-surface-border space-y-4">
-          <div class="flex items-center gap-1 text-amber-400 text-xs">
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          <div class="flex items-center gap-1 text-cyan-400 text-xs">
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
           </div>
           <p class="text-xs text-slate-300 leading-relaxed">
-            "Pagábamos más de $800 al mes en Zapier debido a flujos continuos de sincronización con Shopify. Con NodePulse desplegado en un cluster de Kubernetes reducimos la factura a $30/mes y ahora podemos escribir código JavaScript nativo dentro de cada nodo."
+            "Pagábamos más de $800 al mes en Zapier debido a flujos continuos de sincronización con Shopify. Con Visionarius desplegado en nuestro cluster reducimos la factura a $30/mes y ahora podemos escribir código JavaScript nativo dentro de cada nodo."
           </p>
           <div class="pt-2 border-t border-surface-border flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold text-xs">
+            <div class="w-9 h-9 rounded-full bg-brand-500/20 text-brand-300 flex items-center justify-center font-bold text-xs">
               MC
             </div>
             <div>
@@ -1527,18 +1520,18 @@ services:
 
         <!-- Review 2 -->
         <div class="p-6 rounded-2xl bg-surface-900 border border-surface-border space-y-4">
-          <div class="flex items-center gap-1 text-amber-400 text-xs">
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          <div class="flex items-center gap-1 text-cyan-400 text-xs">
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
           </div>
           <p class="text-xs text-slate-300 leading-relaxed">
-            "La integración de agentes autónomos con Claude y memoria vectorial nos permitió crear un sistema de triage de soporte al cliente que resuelve el 45% de las incidencias técnicas antes de que toquen al equipo humano."
+            "La orquestación de agentes autónomos con Claude y memoria vectorial de Visionarius nos permitió crear un sistema de triage de soporte al cliente que resuelve el 45% de las incidencias técnicas antes de que toquen al equipo humano."
           </p>
           <div class="pt-2 border-t border-surface-border flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-xs">
+            <div class="w-9 h-9 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold text-xs">
               SV
             </div>
             <div>
@@ -1550,18 +1543,18 @@ services:
 
         <!-- Review 3 -->
         <div class="p-6 rounded-2xl bg-surface-900 border border-surface-border space-y-4">
-          <div class="flex items-center gap-1 text-amber-400 text-xs">
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          <div class="flex items-center gap-1 text-cyan-400 text-xs">
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-cyan-400"></i>
           </div>
           <p class="text-xs text-slate-300 leading-relaxed">
-            "Por fin una herramienta donde la privacidad es real. Para una fintech europea, enviar datos bancarios a APIs de terceros era inviable. Con el autoalojamiento cumplimos estrictamente con GDPR y el regulador bancario."
+            "Por fin una herramienta donde la privacidad es absoluta. Para una fintech, enviar datos bancarios a servidores cerrados era inaceptable. Con Visionarius autoalojado cumplimos estrictamente con GDPR y el regulador bancario."
           </p>
           <div class="pt-2 border-t border-surface-border flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">
+            <div class="w-9 h-9 rounded-full bg-blue-500/20 text-blue-300 flex items-center justify-center font-bold text-xs">
               AL
             </div>
             <div>
@@ -1586,7 +1579,7 @@ services:
           Preguntas Frecuentes
         </h2>
         <p class="text-slate-400 text-sm mt-2">
-          Todo lo que necesitas saber sobre NodePulse y su modelo de licenciamiento.
+          Todo lo que necesitas saber sobre Visionarius y su modelo de licenciamiento.
         </p>
       </div>
 
@@ -1594,30 +1587,30 @@ services:
         
         <!-- FAQ 1 -->
         <div class="rounded-xl border border-surface-border bg-surface-850 overflow-hidden">
-          <button onclick="toggleFAQ(this)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm font-bold text-white hover:text-brand-400 transition-colors">
-            <span>¿En qué se diferencia NodePulse de n8n y Zapier?</span>
+          <button onclick="toggleFAQ(this)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm font-bold text-white hover:text-brand-300 transition-colors">
+            <span>¿En qué se diferencia Visionarius de n8n y Zapier?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform"></i>
           </button>
           <div class="faq-content hidden px-6 pb-4 text-xs text-slate-300 leading-relaxed">
-            NodePulse combina lo mejor del mundo visual de n8n con soporte nativo de primera clase para arquitecturas de Agentes Autónomos con LLMs modernos, orquestación de prompts con memoria, e importación nativa de TypeScript/Python. Además, al ser autoalojable mediante Docker, no pagas por cada tarea ejecutada como en Zapier.
+            Visionarius combina la potencia de la orquestación visual basada en nodos con soporte nativo de primera clase para arquitecturas de Agentes Autónomos con LLMs modernos, orquestación de prompts con memoria vectorial (RAG), e importación nativa de TypeScript/Python. Además, al ser autoalojable mediante Docker, no pagas tarifas abusivas por cada tarea ejecutada como en Zapier.
           </div>
         </div>
 
         <!-- FAQ 2 -->
         <div class="rounded-xl border border-surface-border bg-surface-850 overflow-hidden">
-          <button onclick="toggleFAQ(this)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm font-bold text-white hover:text-brand-400 transition-colors">
-            <span>¿Es realmente gratis la versión comunitaria?</span>
+          <button onclick="toggleFAQ(this)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm font-bold text-white hover:text-brand-300 transition-colors">
+            <span>¿Es realmente gratis la versión comunitaria de Visionarius?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform"></i>
           </button>
           <div class="faq-content hidden px-6 pb-4 text-xs text-slate-300 leading-relaxed">
-            Sí. Bajo la licencia Fair-Code puedes descargar la imagen de Docker, ejecutarla en tus propios servidores locales o en la nube, y automatizar tus procesos de negocio sin pagar ninguna cuota de licencia, con flujos y ejecuciones ilimitadas.
+            Sí. Bajo la licencia Fair-Code puedes descargar la imagen de Docker de Visionarius, ejecutarla en tus propios servidores locales o en la nube, y automatizar tus procesos de negocio sin pagar ninguna cuota de licencia, con flujos y ejecuciones ilimitadas.
           </div>
         </div>
 
         <!-- FAQ 3 -->
         <div class="rounded-xl border border-surface-border bg-surface-850 overflow-hidden">
-          <button onclick="toggleFAQ(this)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm font-bold text-white hover:text-brand-400 transition-colors">
-            <span>¿Puedo migrar mis flujos existentes de n8n o Zapier?</span>
+          <button onclick="toggleFAQ(this)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm font-bold text-white hover:text-brand-300 transition-colors">
+            <span>¿Puedo migrar mis flujos existentes de n8n o Zapier a Visionarius?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform"></i>
           </button>
           <div class="faq-content hidden px-6 pb-4 text-xs text-slate-300 leading-relaxed">
@@ -1627,7 +1620,7 @@ services:
 
         <!-- FAQ 4 -->
         <div class="rounded-xl border border-surface-border bg-surface-850 overflow-hidden">
-          <button onclick="toggleFAQ(this)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm font-bold text-white hover:text-brand-400 transition-colors">
+          <button onclick="toggleFAQ(this)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm font-bold text-white hover:text-brand-300 transition-colors">
             <span>¿Qué requisitos mínimos necesita un servidor para autoalojarlo?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform"></i>
           </button>
@@ -1638,12 +1631,12 @@ services:
 
         <!-- FAQ 5 -->
         <div class="rounded-xl border border-surface-border bg-surface-850 overflow-hidden">
-          <button onclick="toggleFAQ(this)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm font-bold text-white hover:text-brand-400 transition-colors">
-            <span>¿Puedo crear mis propios nodos personalizados?</span>
+          <button onclick="toggleFAQ(this)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm font-bold text-white hover:text-brand-300 transition-colors">
+            <span>¿Puedo crear mis propios nodos personalizados en Visionarius?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 transition-transform"></i>
           </button>
           <div class="faq-content hidden px-6 pb-4 text-xs text-slate-300 leading-relaxed">
-            Por supuesto. NodePulse incluye un SDK para TypeScript y Python para construir nodos con interfaz visual personalizada, autenticación OAuth2 y publicarlos en npm o en tu propio registro privado de paquetes de empresa.
+            Por supuesto. Visionarius incluye un SDK para TypeScript y Python para construir nodos con interfaz visual personalizada, autenticación OAuth2 y publicarlos en npm o en tu propio registro privado de paquetes corporativos.
           </div>
         </div>
 
@@ -1653,33 +1646,33 @@ services:
   </section>
 
 
-  <!-- ==================== CALL TO ACTION BANNER ==================== -->
+  <!-- ==================== CALL TO ACTION BANNER (VISIONARIUS BLUE) ==================== -->
   <section id="start-free" class="py-20 bg-surface-950 relative overflow-hidden">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
-      <div class="rounded-3xl bg-gradient-to-br from-brand-600 via-brand-500 to-amber-600 p-8 sm:p-14 text-center text-white shadow-2xl relative overflow-hidden">
+      <div class="rounded-3xl bg-gradient-to-br from-brand-700 via-brand-600 to-cyan-700 p-8 sm:p-14 text-center text-white shadow-2xl relative overflow-hidden glow-blue">
         <!-- Background decorative rings -->
         <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full border-4 border-white/10 pointer-events-none"></div>
         <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full border-4 border-white/10 pointer-events-none"></div>
 
         <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
-          Comienza a automatizar en menos de 2 minutos.
+          Comienza a automatizar con Visionarius en menos de 2 minutos.
         </h2>
-        <p class="text-brand-100 text-sm sm:text-base max-w-xl mx-auto mb-8 font-normal leading-relaxed">
-          Sin tarjeta de crédito requerida. Prueba la nube administrada o corre tu propio contenedor Docker hoy mismo.
+        <p class="text-blue-100 text-sm sm:text-base max-w-xl mx-auto mb-8 font-normal leading-relaxed">
+          Sin tarjeta de crédito requerida. Prueba Visionarius Cloud o levanta tu propio contenedor Docker hoy mismo.
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button onclick="celebrateSuccess(event)" class="w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold text-sm bg-white text-brand-700 hover:bg-slate-100 shadow-xl transition-all hover:scale-105 active:scale-95">
             Crear Cuenta Gratuita
           </button>
-          <a href="https://github.com" target="_blank" class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-bold text-sm bg-brand-800/60 hover:bg-brand-800/90 text-white border border-white/20 transition-all flex items-center justify-center gap-2">
+          <a href="https://github.com" target="_blank" class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-bold text-sm bg-brand-900/60 hover:bg-brand-900/90 text-white border border-white/20 transition-all flex items-center justify-center gap-2">
             <i data-lucide="github" class="w-4 h-4"></i>
             <span>Explorar Código Fuente</span>
           </a>
         </div>
 
-        <div class="mt-8 pt-6 border-t border-white/20 flex flex-wrap items-center justify-center gap-6 text-xs text-brand-100 font-medium">
+        <div class="mt-8 pt-6 border-t border-white/20 flex flex-wrap items-center justify-center gap-6 text-xs text-blue-100 font-medium">
           <span>✓ 14 días de prueba Pro</span>
           <span>✓ Sin permanencia</span>
           <span>✓ Cancelación con 1 clic</span>
@@ -1698,13 +1691,13 @@ services:
         <!-- Col 1: Brand Info -->
         <div class="col-span-2 space-y-4">
           <div class="flex items-center gap-2.5">
-            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
-              <i data-lucide="network" class="w-4 h-4"></i>
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 via-brand-600 to-cyan-500 flex items-center justify-center text-white shadow-md shadow-brand-500/25">
+              <i data-lucide="aperture" class="w-4 h-4"></i>
             </div>
-            <span class="text-base font-bold text-white">Node<span class="text-brand-500">Pulse</span></span>
+            <span class="text-base font-bold text-white">Vision<span class="text-brand-400">arius</span></span>
           </div>
           <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
-            Plataforma de orquestación de flujos de trabajo basada en nodos y agentes de IA. Diseñada para dar a los desarrolladores y empresas soberanía total sobre sus datos.
+            Plataforma de orquestación de flujos de trabajo basada en nodos y agentes de IA. Diseñada para otorgar soberanía absoluta sobre los datos y la infraestructura.
           </p>
           <div class="flex items-center gap-3 pt-1 text-slate-400">
             <a href="https://github.com" class="p-2 rounded-lg bg-surface-850 hover:text-white transition-colors"><i data-lucide="github" class="w-4 h-4"></i></a>
@@ -1731,7 +1724,7 @@ services:
           <div class="font-bold text-white uppercase text-[11px] tracking-wider font-mono">Desarrolladores</div>
           <ul class="space-y-2">
             <li><a href="#self-hosted" class="hover:text-white transition-colors">Documentación Self-Host</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Guía de SDK NodePulse</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Guía de SDK Visionarius</a></li>
             <li><a href="#" class="hover:text-white transition-colors">Creación de Nodos Propios</a></li>
             <li><a href="#" class="hover:text-white transition-colors">Referencia de API REST</a></li>
             <li><a href="#" class="hover:text-white transition-colors">Changelog & Releases</a></li>
@@ -1753,11 +1746,11 @@ services:
 
       <div class="pt-8 border-t border-surface-border flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
         <div>
-          © 2026 NodePulse Inc. Todos los derechos reservados. n8n es una marca registrada de n8n GmbH; NodePulse es un proyecto independiente compatible.
+          © 2026 Visionarius Inc. Todos los derechos reservados. n8n es una marca registrada de n8n GmbH; Visionarius es un proyecto independiente compatible.
         </div>
         <div class="flex items-center gap-6">
-          <span class="flex items-center gap-1.5 text-emerald-400">
-            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span class="flex items-center gap-1.5 text-cyan-400">
+            <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
             <span>Todos los sistemas operativos</span>
           </span>
         </div>
@@ -1785,7 +1778,7 @@ services:
         <button onclick="closeModal()" class="px-4 py-2 rounded-xl bg-surface-800 hover:bg-surface-750 text-slate-300 text-xs font-semibold">
           Cerrar
         </button>
-        <button onclick="handleModalConfirm()" id="modal-confirm-btn" class="px-4 py-2 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs font-bold shadow-md shadow-brand-500/20">
+        <button onclick="handleModalConfirm()" id="modal-confirm-btn" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold shadow-md shadow-brand-500/25">
           Continuar
         </button>
       </div>
@@ -1824,7 +1817,6 @@ services:
       navigator.clipboard.writeText(text).then(() => {
         showToast(successMsg);
       }).catch(() => {
-        // Fallback
         const textarea = document.createElement('textarea');
         textarea.value = text;
         document.body.appendChild(textarea);
@@ -1835,16 +1827,16 @@ services:
       });
     }
 
-    // Confetti on CTA
+    // Confetti on CTA (Visionarius Blue palette)
     function celebrateSuccess(e) {
       if (e) e.preventDefault();
       confetti({
-        particleCount: 80,
-        spread: 70,
+        particleCount: 90,
+        spread: 75,
         origin: { y: 0.6 },
-        colors: ['#ff6d00', '#8b5cf6', '#10b981', '#ffffff']
+        colors: ['#2563eb', '#38bdf8', '#06b6d4', '#60a5fa', '#ffffff']
       });
-      showToast('¡Redirigiendo al panel de inicio gratuito!');
+      showToast('¡Redirigiendo a la consola de Visionarius!');
     }
 
     // ==================== WORKFLOW INTERACTIVE CANVAS SIMULATOR ====================
@@ -1895,8 +1887,8 @@ services:
       const statusPill = document.getElementById('live-status-pill');
       
       runText.textContent = 'Ejecutando...';
-      statusPill.textContent = 'Procesando paso 1/4 (Webhook)';
-      statusPill.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-brand-500/20 text-brand-400 border border-brand-500/30';
+      statusPill.textContent = 'Paso 1/4 (Webhook Inbound recibido)';
+      statusPill.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-brand-500/20 text-brand-300 border border-brand-500/30';
 
       const startTime = performance.now();
       const randomExecId = Math.floor(10000 + Math.random() * 90000);
@@ -1904,7 +1896,7 @@ services:
 
       // Step 1: Webhook active
       const b1 = document.getElementById('badge-node-1');
-      b1.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 animate-pulse';
+      b1.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 animate-pulse';
       b1.textContent = '200 OK';
 
       // Pulse 1
@@ -1914,9 +1906,9 @@ services:
 
       // Step 2: AI Agent after 800ms
       executionTimer = setTimeout(() => {
-        statusPill.textContent = 'Procesando paso 2/4 (Agente IA - Reasoning)';
+        statusPill.textContent = 'Paso 2/4 (Visionarius AI Agent - Razonamiento ReAct)';
         const b2 = document.getElementById('badge-node-2');
-        b2.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-400 border border-purple-500/40 animate-pulse';
+        b2.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-brand-500/20 text-brand-300 border border-brand-500/40 animate-pulse';
         b2.textContent = 'Analizando';
 
         inspectNode('ai-agent-running');
@@ -1924,7 +1916,7 @@ services:
         // Pulse 2 after reasoning
         setTimeout(() => {
           b2.textContent = 'Completado (94/100)';
-          b2.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30';
+          b2.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30';
           
           document.getElementById('path2-active').classList.remove('opacity-0');
           const pBall2 = document.getElementById('pulse-ball-2');
@@ -1932,9 +1924,9 @@ services:
 
           // Step 3: Router check after 700ms
           setTimeout(() => {
-            statusPill.textContent = 'Procesando paso 3/4 (Evaluación de Ruta)';
+            statusPill.textContent = 'Paso 3/4 (Evaluación de Ruta)';
             const b3 = document.getElementById('badge-node-3');
-            b3.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/40';
+            b3.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-400 border border-indigo-500/40';
             b3.textContent = 'Score > 80: True';
 
             // Pulse 3 to Slack (High Value Lead)
@@ -1945,7 +1937,7 @@ services:
             // Step 4: Final Slack Alert
             setTimeout(() => {
               const b4 = document.getElementById('badge-node-4');
-              b4.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40';
+              b4.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-brand-500/20 text-brand-300 border border-brand-500/40';
               b4.textContent = 'Alerta Enviada';
 
               inspectNode('slack');
@@ -1954,7 +1946,7 @@ services:
               durationEl.textContent = `${totalDuration} ms`;
               runText.textContent = 'Ejecutado con Éxito';
               statusPill.textContent = 'Flujo Completado Satisfactoriamente';
-              statusPill.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40';
+              statusPill.className = 'text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40';
 
               isExecuting = false;
             }, 600);
@@ -1971,6 +1963,7 @@ services:
       const viewer = document.getElementById('json-viewer');
       if (nodeType === 'webhook') {
         viewer.textContent = JSON.stringify({
+          "engine": "Visionarius Core",
           "event": "lead.signup",
           "timestamp": new Date().toISOString(),
           "payload": {
@@ -1981,13 +1974,13 @@ services:
             "budget": "$50,000/año"
           },
           "headers": {
-            "user-agent": "Mozilla/5.0",
+            "user-agent": "Visionarius-Webhook/3.0",
             "x-forwarded-for": "194.24.18.2"
           }
         }, null, 2);
       } else if (nodeType === 'ai-agent' || nodeType === 'ai-agent-running') {
         viewer.textContent = JSON.stringify({
-          "node": "OpenAI_Agent_LeadScorer",
+          "node": "Visionarius_AI_LeadScorer",
           "model": "gpt-4o",
           "temperature": 0.2,
           "prompt_tokens": 420,
@@ -1996,7 +1989,7 @@ services:
           "output": {
             "score": 94,
             "priority": "HIGH_VALUE_ENTERPRISE",
-            "summary": "Empresa fintech con 450 empleados y presupuesto superior a $50k. Alto fit con producto Enterprise.",
+            "summary": "Empresa fintech con 450 empleados y presupuesto superior a $50k. Alto fit con Visionarius Enterprise.",
             "recommended_sales_rep": "Carlos Mendoza (Enterprise Lead)"
           }
         }, null, 2);
@@ -2012,7 +2005,7 @@ services:
         viewer.textContent = JSON.stringify({
           "node": "Slack_VIP_Alert",
           "channel": "#leads-enterprise-deals",
-          "message": "🔥 ¡Nuevo Lead Calificado con Score 94!\n• Empresa: Fintech Global Corp\n• Contacto: Valentina Morales (valentina@fintech-enterprise.io)\n• Presupuesto: $50,000/año\n• Asignado a: Carlos Mendoza",
+          "message": "🔥 ¡Nuevo Lead Calificado en Visionarius con Score 94!\n• Empresa: Fintech Global Corp\n• Contacto: Valentina Morales (valentina@fintech-enterprise.io)\n• Presupuesto: $50,000/año\n• Asignado a: Carlos Mendoza",
           "status": 200,
           "slack_message_ts": "1718902842.001900"
         }, null, 2);
@@ -2030,14 +2023,12 @@ services:
 
     // ==================== TEMPLATES TAB FILTERING ====================
     function switchTemplateTab(category) {
-      // Button states
       const buttons = document.querySelectorAll('.template-tab-btn');
       buttons.forEach(btn => {
         btn.className = 'template-tab-btn px-4 py-2 rounded-xl text-xs font-semibold bg-surface-800 hover:bg-surface-750 text-slate-300 transition-all border border-surface-border';
       });
-      event.target.className = 'template-tab-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-brand-500 text-white transition-all shadow-md shadow-brand-500/30';
+      event.target.className = 'template-tab-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white transition-all shadow-md shadow-brand-500/30';
 
-      // Card visibility
       const cards = document.querySelectorAll('.template-card');
       cards.forEach(card => {
         if (category === 'all' || card.getAttribute('data-category') === category) {
@@ -2104,7 +2095,6 @@ services:
       const icon = button.querySelector('i');
       const isExpanded = !content.classList.contains('hidden');
 
-      // Close all others
       document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
       document.querySelectorAll('#faq-list button i').forEach(ic => ic.style.transform = 'rotate(0deg)');
 
@@ -2121,9 +2111,9 @@ services:
     const modalBody = document.getElementById('modal-body');
 
     function openTemplateModal(templateName) {
-      modalTitle.textContent = `Plantilla: ${templateName}`;
+      modalTitle.textContent = `Plantilla Visionarius: ${templateName}`;
       modalBody.innerHTML = `
-        <p>¿Deseas importar este flujo de automatización a tu espacio de trabajo de NodePulse?</p>
+        <p>¿Deseas importar este flujo de automatización a tu espacio de trabajo de Visionarius?</p>
         <div class="p-3 rounded-xl bg-surface-950 border border-surface-border text-slate-300 font-mono text-[11px]">
           <div>✔ Estructura de nodos preconfigurada</div>
           <div>✔ Mapeo de parámetros y triggers</div>
@@ -2137,7 +2127,7 @@ services:
     }
 
     function openContactModal() {
-      modalTitle.textContent = 'Hablar con el Equipo Enterprise';
+      modalTitle.textContent = 'Contactar al Equipo Enterprise de Visionarius';
       modalBody.innerHTML = `
         <div class="space-y-3">
           <p>Déjanos tus datos y un arquitecto de soluciones te contactará en menos de 2 horas:</p>
